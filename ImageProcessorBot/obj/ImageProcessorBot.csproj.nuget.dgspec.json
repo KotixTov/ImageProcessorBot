@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Dungeon Master\\source\\repos\\ImageProcessorBot\\ImageProcessorBot\\ImageProcessorBot.csproj": {}
+    "D:\\My_Projects\\C#\\ImageProcessorBot\\ImageProcessorBot\\ImageProcessorBot.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Dungeon Master\\source\\repos\\ImageProcessorBot\\ImageProcessorBot\\ImageProcessorBot.csproj": {
+    "D:\\My_Projects\\C#\\ImageProcessorBot\\ImageProcessorBot\\ImageProcessorBot.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Dungeon Master\\source\\repos\\ImageProcessorBot\\ImageProcessorBot\\ImageProcessorBot.csproj",
+        "projectUniqueName": "D:\\My_Projects\\C#\\ImageProcessorBot\\ImageProcessorBot\\ImageProcessorBot.csproj",
         "projectName": "ImageProcessorBot",
-        "projectPath": "C:\\Users\\Dungeon Master\\source\\repos\\ImageProcessorBot\\ImageProcessorBot\\ImageProcessorBot.csproj",
+        "projectPath": "D:\\My_Projects\\C#\\ImageProcessorBot\\ImageProcessorBot\\ImageProcessorBot.csproj",
         "packagesPath": "C:\\Users\\Dungeon Master\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Dungeon Master\\source\\repos\\ImageProcessorBot\\ImageProcessorBot\\obj\\",
+        "outputPath": "D:\\My_Projects\\C#\\ImageProcessorBot\\ImageProcessorBot\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Dungeon Master\\AppData\\Roaming\\NuGet\\NuGet.Config",
