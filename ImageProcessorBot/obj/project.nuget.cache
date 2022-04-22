@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "WeLuQCasVZGmRggLVXZX+yFlyPPsZ0y69jeOYO6QbxhL2Nd/6GAFW5uw16apt3HhLX/FMEkzITMnl4nO4suebw==",
+  "dgSpecHash": "BWWiKI4rMcwWMgKbet1Dmd9Vdil0B03wKbuXCLQXa9pj2O5IcWGYDcchf8tkx7akvZMFYZ+57miP3DeZgJ+DTg==",
   "success": true,
   "projectFilePath": "D:\\My_Projects\\C#\\ImageProcessorBot\\ImageProcessorBot\\ImageProcessorBot.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Dungeon Master\\.nuget\\packages\\newtonsoft.json\\12.0.2\\newtonsoft.json.12.0.2.nupkg.sha512",
+    "C:\\Users\\Dungeon Master\\.nuget\\packages\\system.threading.channels\\6.0.0\\system.threading.channels.6.0.0.nupkg.sha512",
+    "C:\\Users\\Dungeon Master\\.nuget\\packages\\telegram.bot\\17.0.0\\telegram.bot.17.0.0.nupkg.sha512",
+    "C:\\Users\\Dungeon Master\\.nuget\\packages\\telegram.bot.extensions.polling\\1.0.2\\telegram.bot.extensions.polling.1.0.2.nupkg.sha512"
+  ],
   "logs": []
 }
