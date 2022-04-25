@@ -9,39 +9,40 @@ namespace ImageProcessorBot
 {
     class UpdateHandler
     {
-        private List<ChatStateMachine> _chatStateMachines;
+        private List<ChatStateMachine> _chatStateMachines = new List<ChatStateMachine>();
 
         public async Task HandleUpdateAsync(ITelegramBotClient botClient, Update update, CancellationToken cancellationToken)
         {
-            User user;
-
-            if (TryGetUserFromUpdate(update, out user) == false)
+            if (TryGetChatIdFromUpdate(update, out ChatId chatId) == false)
             {
                 return;
             }
 
-            foreach(var stateMachine in _chatStateMachines)
+            foreach (var stateMachine in _chatStateMachines)
             {
-                if (stateMachine.User == user)
+                //Need to solve the problem with == operator for ChatId
+                if (stateMachine.ChatId.Identifier == chatId.Identifier)
                 {
-                    await stateMachine.HandleUpdateAsync(botClient, update, cancellationToken);
+                    await stateMachine.HandleUpdateAsync(update);
                     return;
                 }
             }
 
-            _chatStateMachines.Add(new ChatStateMachine(user));
+            var newStateMachine = new ChatStateMachine(chatId, botClient, cancellationToken);
+            _chatStateMachines.Add(newStateMachine);
+            await newStateMachine.HandleUpdateAsync(update);
         }
 
-        private bool TryGetUserFromUpdate(Update update, out User user)
+        private bool TryGetChatIdFromUpdate(Update update, out ChatId user)
         {
             if (update.Type == UpdateType.Message)
             {
-                user = update.Message.From;
+                user = update.Message.Chat.Id;
                 return true;
             }
             else if (update.Type == UpdateType.CallbackQuery)
             {
-                user = update.CallbackQuery.From;
+                user = update.CallbackQuery.Message.Chat.Id;
                 return true;
             }
 

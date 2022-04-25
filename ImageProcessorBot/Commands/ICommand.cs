@@ -1,7 +1,9 @@
-﻿namespace ImageProcessorBot.Commands
+﻿using System.Threading.Tasks;
+
+namespace ImageProcessorBot.Commands
 {
-    interface ICommand
+    public interface ICommand
     {
-        public void Execute();
+        public Task Execute();
     }
 }
