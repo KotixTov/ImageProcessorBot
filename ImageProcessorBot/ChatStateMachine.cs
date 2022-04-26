@@ -1,5 +1,6 @@
 ﻿using ImageProcessorBot.Commands;
 using ImageProcessorBot.States;
+using ImageProcessorBot.States.ImageProcessingStates;
 using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
@@ -23,12 +24,18 @@ namespace ImageProcessorBot
             _botClient = botClient;
             _cancellationToken = cancellationToken;
 
-            var menuCommands = new List<IChatCommand>();
+            var mainMenuCommands = new List<IChatCommand>();
+            var imageProcessingStateCommands = new List<IChatCommand>();
 
-            menuCommands.Add(new ChangeStateCommand(this, new ImageProcessingState(this, ChatId, _botClient, _cancellationToken)));
-            menuCommands.Add(new ShowAPODCommand(botClient, chatId));
+            imageProcessingStateCommands.Add(new ChangeStateCommand(this, new DitherState(this, ChatId, _botClient, _cancellationToken), "/dither"));
+            imageProcessingStateCommands.Add(new ChangeStateCommand(this, new PixelateState(this, ChatId, _botClient, _cancellationToken), "/pixelate"));
+            imageProcessingStateCommands.Add(new ChangeStateCommand(this, new OilPaintState(this, ChatId, _botClient, _cancellationToken), "/oilpaint"));
+            imageProcessingStateCommands.Add(new DelegateCommand(ChangeStateToDefault, "/menu"));
 
-            _defaultState = new MenuState(this, chatId, botClient, cancellationToken, menuCommands);
+            mainMenuCommands.Add(new ChangeStateCommand(this, new ImageProcessingMenuState(this, ChatId, _botClient, _cancellationToken, imageProcessingStateCommands), "/processimage"));
+            mainMenuCommands.Add(new ShowAPODCommand(botClient, chatId));
+
+            _defaultState = new MainMenuState(this, chatId, botClient, cancellationToken, mainMenuCommands);
         }
 
         public async Task HandleUpdateAsync(Update update)

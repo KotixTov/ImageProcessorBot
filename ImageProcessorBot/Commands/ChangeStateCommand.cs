@@ -5,16 +5,17 @@ namespace ImageProcessorBot.Commands
 {
     class ChangeStateCommand : IChatCommand
     {
-        string IChatCommand.CommandText { get => _commandText;}
+        string IChatCommand.CommandText { get => _commandText; }
 
         private ChatStateMachine _stateMachine;
         private ChatState _targetState;
-        private string _commandText = "/processimage";
+        private string _commandText;
 
-        public ChangeStateCommand(ChatStateMachine stateMachine, ChatState targetState)
+        public ChangeStateCommand(ChatStateMachine stateMachine, ChatState targetState, string commandText)
         {
             _stateMachine = stateMachine;
             _targetState = targetState;
+            _commandText = commandText;
         }
 
         Task ICommand.Execute()

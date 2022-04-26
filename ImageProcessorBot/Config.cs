@@ -2,6 +2,6 @@
 {
     public static class Config
     {
-        public static string Token = "5321366614:AAEQ2zGEkmJhClMa2mR0nh53KxShPis0RZg";
+        public static string Token = "Your token here";
     }
 }

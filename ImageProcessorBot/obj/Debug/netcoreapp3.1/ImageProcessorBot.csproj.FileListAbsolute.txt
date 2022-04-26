@@ -17,3 +17,7 @@ D:\My_Projects\C#\ImageProcessorBot\ImageProcessorBot\obj\Debug\netcoreapp3.1\Im
 D:\My_Projects\C#\ImageProcessorBot\ImageProcessorBot\obj\Debug\netcoreapp3.1\ImageProcessorBot.pdb
 D:\My_Projects\C#\ImageProcessorBot\ImageProcessorBot\obj\Debug\netcoreapp3.1\ImageProcessorBot.genruntimeconfig.cache
 D:\My_Projects\C#\ImageProcessorBot\ImageProcessorBot\bin\Debug\netcoreapp3.1\Apod.dll
+D:\My_Projects\C#\ImageProcessorBot\ImageProcessorBot\bin\Debug\netcoreapp3.1\SixLabors.ImageSharp.dll
+D:\My_Projects\C#\ImageProcessorBot\ImageProcessorBot\bin\Debug\netcoreapp3.1\System.Runtime.CompilerServices.Unsafe.dll
+D:\My_Projects\C#\ImageProcessorBot\ImageProcessorBot\bin\Debug\netcoreapp3.1\System.Text.Encoding.CodePages.dll
+D:\My_Projects\C#\ImageProcessorBot\ImageProcessorBot\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Text.Encoding.CodePages.dll

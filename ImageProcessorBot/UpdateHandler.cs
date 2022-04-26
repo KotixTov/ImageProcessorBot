@@ -33,20 +33,20 @@ namespace ImageProcessorBot
             await newStateMachine.HandleUpdateAsync(update);
         }
 
-        private bool TryGetChatIdFromUpdate(Update update, out ChatId user)
+        private bool TryGetChatIdFromUpdate(Update update, out ChatId chatId)
         {
             if (update.Type == UpdateType.Message)
             {
-                user = update.Message.Chat.Id;
+                chatId = update.Message.Chat.Id;
                 return true;
             }
             else if (update.Type == UpdateType.CallbackQuery)
             {
-                user = update.CallbackQuery.Message.Chat.Id;
+                chatId = update.CallbackQuery.Message.Chat.Id;
                 return true;
             }
 
-            user = null;
+            chatId = null;
             return false;
         }
     }

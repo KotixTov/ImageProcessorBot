@@ -1,8 +1,7 @@
-﻿using System.Threading.Tasks;
-using Apod;
+﻿using Apod;
+using System.Threading.Tasks;
 using Telegram.Bot;
 using Telegram.Bot.Types;
-using Telegram.Bot.Types.ReplyMarkups;
 
 namespace ImageProcessorBot.Commands
 {
@@ -13,7 +12,7 @@ namespace ImageProcessorBot.Commands
         private readonly ITelegramBotClient _botClient;
         private readonly ChatId _chatId;
 
-        string IChatCommand.CommandText { get => _commandText;}
+        string IChatCommand.CommandText { get => _commandText; }
 
         public ShowAPODCommand(ITelegramBotClient botClient, ChatId chatId)
         {
@@ -21,7 +20,7 @@ namespace ImageProcessorBot.Commands
             _botClient = botClient;
             _chatId = chatId;
         }
-        
+
         async Task ICommand.Execute()
         {
             var response = await _apodClient.FetchApodAsync();

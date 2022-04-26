@@ -1,11 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "vRZ+XLM7Z4+ypf1XRc6Sa2pEbYj8R0CUMQ9qv3v3mEuuVrIVyW5ybHB6YrjDf+WoYSl5GCabrwhnN/1LtbgXFA==",
+  "dgSpecHash": "qxsLE5FCgoOGcHOh4/JhRnSXL+GVGSrAZ39TZSLJacoeipJdsPuR7YvGlRnOlRdrvav1R3tBC3w9G+TYejJByg==",
   "success": true,
   "projectFilePath": "D:\\My_Projects\\C#\\ImageProcessorBot\\ImageProcessorBot\\ImageProcessorBot.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Dungeon Master\\.nuget\\packages\\apod.net\\1.0.1\\apod.net.1.0.1.nupkg.sha512",
+    "C:\\Users\\Dungeon Master\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",
     "C:\\Users\\Dungeon Master\\.nuget\\packages\\newtonsoft.json\\12.0.2\\newtonsoft.json.12.0.2.nupkg.sha512",
+    "C:\\Users\\Dungeon Master\\.nuget\\packages\\sixlabors.imagesharp\\2.1.1\\sixlabors.imagesharp.2.1.1.nupkg.sha512",
+    "C:\\Users\\Dungeon Master\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\5.0.0\\system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512",
+    "C:\\Users\\Dungeon Master\\.nuget\\packages\\system.text.encoding.codepages\\5.0.0\\system.text.encoding.codepages.5.0.0.nupkg.sha512",
     "C:\\Users\\Dungeon Master\\.nuget\\packages\\system.text.json\\4.6.0\\system.text.json.4.6.0.nupkg.sha512",
     "C:\\Users\\Dungeon Master\\.nuget\\packages\\system.threading.channels\\6.0.0\\system.threading.channels.6.0.0.nupkg.sha512",
     "C:\\Users\\Dungeon Master\\.nuget\\packages\\telegram.bot\\17.0.0\\telegram.bot.17.0.0.nupkg.sha512",
