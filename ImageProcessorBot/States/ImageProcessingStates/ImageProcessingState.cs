@@ -14,15 +14,25 @@ namespace ImageProcessorBot.States
         protected string _imagePath = @"TempImages\";
         protected string _savedImageName = "savedImage.jpg";
         protected string _processedImageName = "processedImage.png";
+        private string[] _correctMIMETypes = new string[] {"gif", "jpeg", "pjpeg", "png", "webp", "tiff", "bmp", "tga"};
+        private string _enterMessageText;
 
         public ImageProcessingState(ChatStateMachine stateMachine, ChatId chatId, ITelegramBotClient botClient, CancellationToken cancellationToken)
             : base(stateMachine, chatId, botClient, cancellationToken)
         {
+            _enterMessageText = "Send image to process. You can also send one of these document types: ";
+
+            for (int i = 0; i < _correctMIMETypes.Length - 1; i++)
+            {
+                _enterMessageText += $"{_correctMIMETypes[i]}, ";
+            }
+
+            _enterMessageText += $"{_correctMIMETypes[_correctMIMETypes.Length - 1]}.";
         }
 
         public async override Task EnterAsync()
         {
-            await _botClient.SendTextMessageAsync(_chatId, "Send image to process", replyMarkup: new ReplyKeyboardRemove());
+            await _botClient.SendTextMessageAsync(_chatId, _enterMessageText, replyMarkup: new ReplyKeyboardRemove());
         }
 
         public override Task ExitAsync()
@@ -68,10 +78,14 @@ namespace ImageProcessorBot.States
             else if (message.Type == MessageType.Document)
             {
                 var document = message.Document;
-                if (document.MimeType.Contains("image"))
+                foreach (var MIMEType in _correctMIMETypes)
                 {
-                    fileId = message.Document.FileId;
-                    return true;
+                    if (document.MimeType.Contains(MIMEType))
+                    {
+                        fileId = message.Document.FileId;
+                        return true;
+                    }
+
                 }
             }
 

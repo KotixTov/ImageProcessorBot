@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\Dungeon Master\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Dungeon Master\\.nuget\\packages"
+    ]
+  }
+}

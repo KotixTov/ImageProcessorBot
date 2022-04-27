@@ -1,0 +1,14 @@
+D:\My_Projects\C#\ImageProcessorBot\ImageProcessorBot\bin\Release\netcoreapp3.1\publish\ImageProcessorBot.exe
+D:\My_Projects\C#\ImageProcessorBot\ImageProcessorBot\bin\Release\netcoreapp3.1\publish\ImageProcessorBot.dll
+D:\My_Projects\C#\ImageProcessorBot\ImageProcessorBot\bin\Release\netcoreapp3.1\publish\ImageProcessorBot.deps.json
+D:\My_Projects\C#\ImageProcessorBot\ImageProcessorBot\bin\Release\netcoreapp3.1\publish\ImageProcessorBot.runtimeconfig.json
+D:\My_Projects\C#\ImageProcessorBot\ImageProcessorBot\bin\Release\netcoreapp3.1\publish\ImageProcessorBot.pdb
+D:\My_Projects\C#\ImageProcessorBot\ImageProcessorBot\bin\Release\netcoreapp3.1\publish\Apod.dll
+D:\My_Projects\C#\ImageProcessorBot\ImageProcessorBot\bin\Release\netcoreapp3.1\publish\Newtonsoft.Json.dll
+D:\My_Projects\C#\ImageProcessorBot\ImageProcessorBot\bin\Release\netcoreapp3.1\publish\SixLabors.ImageSharp.dll
+D:\My_Projects\C#\ImageProcessorBot\ImageProcessorBot\bin\Release\netcoreapp3.1\publish\System.Runtime.CompilerServices.Unsafe.dll
+D:\My_Projects\C#\ImageProcessorBot\ImageProcessorBot\bin\Release\netcoreapp3.1\publish\System.Text.Encoding.CodePages.dll
+D:\My_Projects\C#\ImageProcessorBot\ImageProcessorBot\bin\Release\netcoreapp3.1\publish\System.Threading.Channels.dll
+D:\My_Projects\C#\ImageProcessorBot\ImageProcessorBot\bin\Release\netcoreapp3.1\publish\Telegram.Bot.dll
+D:\My_Projects\C#\ImageProcessorBot\ImageProcessorBot\bin\Release\netcoreapp3.1\publish\Telegram.Bot.Extensions.Polling.dll
+D:\My_Projects\C#\ImageProcessorBot\ImageProcessorBot\bin\Release\netcoreapp3.1\publish\runtimes\win\lib\netcoreapp2.0\System.Text.Encoding.CodePages.dll

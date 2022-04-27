@@ -30,7 +30,10 @@ namespace ImageProcessorBot
             imageProcessingStateCommands.Add(new ChangeStateCommand(this, new DitherState(this, ChatId, _botClient, _cancellationToken), "/dither"));
             imageProcessingStateCommands.Add(new ChangeStateCommand(this, new PixelateState(this, ChatId, _botClient, _cancellationToken), "/pixelate"));
             imageProcessingStateCommands.Add(new ChangeStateCommand(this, new OilPaintState(this, ChatId, _botClient, _cancellationToken), "/oilpaint"));
-            imageProcessingStateCommands.Add(new DelegateCommand(ChangeStateToDefault, "/menu"));
+            imageProcessingStateCommands.Add(new ChangeStateCommand(this, new SharpenState(this, ChatId, _botClient, _cancellationToken), "/sharpen"));
+            imageProcessingStateCommands.Add(new ChangeStateCommand(this, new KodachromeState(this, ChatId, _botClient, _cancellationToken), "/kodachrome"));
+            imageProcessingStateCommands.Add(new ChangeStateCommand(this, new PolaroidState(this, ChatId, _botClient, _cancellationToken), "/polaroid"));
+            imageProcessingStateCommands.Add(new ChangeStateToDefaultCommand(this, "/menu"));
 
             mainMenuCommands.Add(new ChangeStateCommand(this, new ImageProcessingMenuState(this, ChatId, _botClient, _cancellationToken, imageProcessingStateCommands), "/processimage"));
             mainMenuCommands.Add(new ShowAPODCommand(botClient, chatId));

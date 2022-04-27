@@ -19,7 +19,7 @@ namespace ImageProcessorBot.States
         {
             ReplyKeyboardMarkup keyboard = BuildKeyboard(3);
 
-            await _botClient.SendTextMessageAsync(_chatId, "This is chat menu", replyMarkup: keyboard);
+            await _botClient.SendTextMessageAsync(_chatId, "Chose next command. There aren't many at the moment, but there will be updates in the future!", replyMarkup: keyboard);
         }
 
         public override Task ExitAsync()
